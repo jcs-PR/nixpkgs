@@ -20607,7 +20607,9 @@ with pkgs;
 
   serd = callPackage ../development/libraries/serd {};
 
-  serf = callPackage ../development/libraries/serf {};
+  serf = callPackage ../development/libraries/serf {
+    openssl = openssl_1_1;
+  };
 
   sfsexp = callPackage ../development/libraries/sfsexp {};
 
